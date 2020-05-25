@@ -1,15 +1,16 @@
 ```
 vue-awesome
-├─ .vscode
-│  └─ settings.json
-└─ vue-router
+├─ .gitignore
+├─ LICENSE.md
+│  └─ LICENSE.md
+└─ vue-router-comtrue
+   ├─ .gitignore
    ├─ .prettierrc
    ├─ README.md
    ├─ babel.config.js
    ├─ lib
-   │  ├─ .DS_Store
-   │  ├─ cvue-router.js       // vue-router核心实现
-   │  └─ vue-router-tab       // 重写vue-router实现vue-router-tab
+   │  ├─ cvue-router.js    // vue-router核心实现
+   │  └─ vue-router-tab    // 重写vue-router实现vue-router-tab
    │     └─ index.js
    ├─ package.json
    ├─ public
