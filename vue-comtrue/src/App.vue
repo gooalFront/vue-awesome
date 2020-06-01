@@ -14,6 +14,9 @@
     <div @click="handleClick">/login/chil?name=12&age=18</div>
     <div @click="handleClick2">/login/12</div>
     <div @click="handleClick3">/login/chil?name=13&age=19/</div>
+
+    <div>{{ $store.state.count }}</div>
+    <button @click="handleAdd">add</button>
     <router-tab-view></router-tab-view>
   </div>
 </template>
@@ -27,6 +30,9 @@ export default {
     console.log(this.$route);
   },
   methods: {
+    handleAdd() {
+      this.$store.dispatch("add").then((res) => console.log(res));
+    },
     handleClick() {
       console.log(this);
       this.$routeTab.openTab("/login/chil?name=12&age=18", "childTab");

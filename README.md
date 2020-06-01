@@ -3,15 +3,19 @@ vue-awesome
 ├─ .gitignore
 ├─ LICENSE.md
 │  └─ LICENSE.md
-└─ vue-router-comtrue
+├─ README.md
+└─ vue-comtrue
    ├─ .gitignore
    ├─ .prettierrc
    ├─ README.md
    ├─ babel.config.js
    ├─ lib
-   │  ├─ cvue-router.js    // vue-router核心实现
-   │  └─ vue-router-tab    // 重写vue-router实现vue-router-tab
-   │     └─ index.js
+   │  ├─ README.md
+   │  ├─ cvue-router.js   // vue-router核心实现
+   │  ├─ vue-router-tab
+   │  │  └─ index.js      // 重写vue-router实现vue-router-tab
+   │  └─ vuex
+   │     └─ index.js      // vuex核心实现
    ├─ package.json
    ├─ public
    │  ├─ favicon.ico
@@ -19,7 +23,8 @@ vue-awesome
    ├─ src
    │  ├─ App.vue
    │  ├─ assets
-   │  │  └─ logo.png
+   │  │  ├─ logo.png
+   │  │  └─ theme.css
    │  ├─ components
    │  │  └─ HelloWorld.vue
    │  ├─ main.js
